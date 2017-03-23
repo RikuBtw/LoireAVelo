@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#menu900").hide();
+    $(".close").hide();
+      $("#hamburgeois").click(function(){
+          $(".line").toggle();
+          $(".close").toggle();
+          $("#menu900").toggle(200);
+      });
+  });
+  </script>
+</head>
+
+<body>
+	<div class="header">
+		<div id="hamburgeois">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+      <div class="close"></div>
+		</div>
+	</div>
+
+	<div id="menu900">
+		<ul>
+				<li><a href = #> Notre Région </a></li>
+				<li><a href = # >Les Parcours</a></li>
+				<li><a href = # >Les Séjours</a></li>
+				<li><a href = # >Les Locations</a></li>
+				<li><a href = # >Contact</a></li>
+		</ul>
+	</div>
+	<div class="spinner">
+		<ul class="center">
+			<li><a href = # > Notre Région </a></li>
+			<li><a href = # >Les Parcours</a></li>
+			<li><a href = # >Les Séjours</a></li>
+			<li><a href = # >Les Locations</a></li>
+			<li><a href = # >Contact</a></li>
+		</ul>
+		<div class = "text-container">
+			<div class="text">
+				<div id="text1">Découvrez notre région</div>
+				<div id="text2">Une promenade exaltante à travers les pays de la Loire</div>
+			</div>
+			<div class="text900">
+				<div id="text1">Un voyage singulier</div>
+				<div id="text2">Visitez la Loire à vélo</div>
+			</div>
+			<div class="text450">
+				<div id="text1">Visitez la Loire</div>
+				<div id="text2">... A vélo !</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="shortcut">
+		<div class="box">
+		    <div class="text-box">
+				<p>Féérie de Noël</p>
+			</div>
+			<div class="image 1" id="news1">
+			</div>
+			</div>
+
+		<div class="box">
+			<div class="text-box">
+				<p>Festival de musique</p>
+			</div>
+			<div class="image 2" id="news2">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="text-box">
+				<p>Naviguez sur la loire à vélo</p>
+			</div>
+			<div class="image" id="news3">
+			</div>
+		</div>
+	</div>
+	<div class="content"></div>
+</body>
+
+</html>
