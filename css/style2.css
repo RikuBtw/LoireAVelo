@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+
 }
 
 .header{
@@ -12,51 +13,23 @@
 
 
 #map {
-    height: 100%;
+    height: 60%;
     width: 100%;
-       }
-.spinner {
-	width:100%;
-	height:450px;
-	background-image: url('../img/1.png');
-	background-size: cover;
-	background-repeat:no-repeat;
-	display:flex;
-	flex-direction:column;
 }
 
 
-.content{
-  width: 100%;
-	margin-top:200px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.blog{
-  width: 70%;
-  margin: 20px;
-  padding: 30px;
-  border-bottom: 1px solid #ccc;
-}
-
-.blog h1{
-  font-family: 'Muli';
-
-}
-.blog h2{
-  font-family: 'Muli';
-  font-size: 0.8em;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-.blog p{
-  font-family: 'Muli';
-  font-size: 1em;
-}
 @media screen and  (min-width: 900px){
+
+  .spinner {
+  	width:100%;
+  	height:70px;
+  	background-image: url('../img/1.png');
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	display:flex;
+  	flex-direction:column;
+    transition: all 0.3s ease;
+  }
 
 	.logo{
 		background-image:url("../img/loire-a-velo.png");
@@ -78,18 +51,11 @@
 		background-image:url("../img/bike.svg");
 		background-repeat:no-repeat;
 		background-position : 95% 50%;
-		transition: all 1s ease;
-	    height: 100%;
+	  height: 100%;
 		width: 65px;
 		float:right;
 		margin-right:10px;
 	}
-
-
-	.biker:hover{
-		transform: rotateZ(360deg);
-	}
-
 
 	#hamburgeois{
 		display:none;
@@ -143,98 +109,6 @@
 	}
 	ul li a:after{  transform-origin:  0% 50%; }
 
-	.text-container{
-		width:100%;
-		height:70%;
-		display:flex;
-		align-items: center;
-		justify-content:center;
-		flex-direction:column;
-	}
-
-	.text{
-		font-family:'Domine';
-		text-transform: uppercase;
-		display:flex;
-		flex-direction:column;
-		align-items: center;
-		text-align: center;
-	}
-	.text900{
-		display:none;
-	}
-	.text450{
-		display:none;
-	}
-
-	#text1 {
-		width:350px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-		margin-bottom: 20px;
-	}
-	#text2 {
-		width:800px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-	}
-	.shortcut{
-		display:flex;
-		flex-direction : row;
-		align-items: center;
-		justify-content:center;
-		height:0px;
-
-	}
-
-	.box{
-		width: 250px;
-		height:100px;
-		background-color:#ccc;
-		margin: 10px;
-
-	}
-
-	.text-box{
-		background-color:#fff;
-		height:50%;
-		display:flex;
-		align-items:center;
-		text-align:center;
-		justify-content:center;
-		color:#222;
-		font-family:'Muli';
-		font-size:0.9em;
-	}
-
-	.image{
-		background-color:#aaa;
-		height:150px;
-		transition: box-shadow 0.2s ease;
-	}
-
-	.image:hover{
-		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-	}
-
-	#news1{
-		background-image: url("../img/image0.jpg");
-		background-size: cover;
-	}
-	#news2{
-		background-image: url("../img/image1.jpg");
-		background-size: cover;
-	}
-	#news3{
-		background-image: url("../img/image2.jpg");
-		background-size: cover;
-	}
 }
 @media screen and  (max-width: 900px){
 
@@ -258,7 +132,7 @@
 
 	.spinner {
 	width:100%;
-	height:400px;
+	height:0px;
 	background-image: url("../img/1.png");
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -344,169 +218,20 @@
 	.center{
 		display:none;
 	}
-
-
-	.text-container{
-		width:100%;
-		height:100%;
-		display:flex;
-		align-items: center;
-		justify-content:center;
-		flex-direction:column;
-	}
-
-	.text{
-		display:none;
-	}
-	.text450{
-		display:none;
-	}
-	.text900{
-		font-family:'Domine';
-		text-transform: uppercase;
-		display:flex;
-		flex-direction:column;
-		align-items: center;
-		text-align: center;
-
-
-	}
-
-	#text1 {
-		width:290px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-		margin-bottom: 20px;
-	}
-	#text2 {
-		width:320px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-	}
-
-	.shortcut{
-		display:flex;
-		flex-direction : column;
-		align-items: center;
-	}
-
-	.box{
-		width: 60%;
-		background-color:#ccc;
-		margin: 10px;
-
-	}
-
-
-	.text-box{
-		background-color:#008a2d;
-		height:80px;
-		display:flex;
-		align-items:center;
-		text-align:center;
-		justify-content:center;
-		color:#fff;
-		font-family:'Muli';
-		font-size:1em;
-
-	}
-
-	.image{
-		background-color:#aaa;
-		height:0;
-		transition: box-shadow 0.2s ease;
-		text-align:center;
-	}
-
-	.image:hover{
-		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-	}
-
-	#news1{
-		background-image: url("../img/image1.jpg");
-		background-size: 100%;
-		background-repeat:no-repeat;
-		width: 100%;
-		height: 0;
-		padding-top: 66.7%;
-	}
-	#news2{
-		background-image: url("../img/image2.jpg");
-		background-size: 100%;
-		background-repeat:no-repeat;
-		width: 100%;
-		height: 0;
-		padding-top: 66.7%;
-	}
-	#news3{
-		background-image: url("../img/image3.png");
-		background-size: 100%;
-		background-repeat:no-repeat;
-		width: 100%;
-		height: 0;
-		padding-top: 66.7%;
-	}
-}
-
-@media screen and  (max-width: 450px){
-	.text{
-		display:none;
-	}
-	.text900{
-		display:none;
-	}
-	.text450{
-		font-family:'Domine';
-		text-transform: uppercase;
-		display:flex;
-		flex-direction:column;
-		align-items: center;
-		text-align: center;
-	}
-
-	#text1 {
-		width:220px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-		margin-bottom: 20px;
-	}
-	#text2 {
-		width:130px;
-		color:#fff;
-		padding:15px;
-		font-size:1.5em;
-		background-color:rgba(0,0,0,0.7);
-		background-size: cover;
-	}
-
-	.box{
-		width: 90%;
-		background-color:#ccc;
-		margin: 10px;
-	}
 }
 
 #footer{
   font-family:'Muli';
   position:relative;
-  bottom:0px;
   background-color: #008a2d;
   width:100%;
   display: flex;
+  height:150px;
   flex-direction: row;
 }
 #container{
   width:100%;
-  height:200px;
+  height:100%;
   display: flex;
   flex-direction: row;
   align-items: center;

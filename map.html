@@ -1,0 +1,168 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="./css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#menu900").hide();
+    $(".close").hide();
+      $("#hamburgeois").click(function(){
+          $(".line").toggle();
+          $(".close").toggle();
+          $("#menu900").toggle(200);
+      });
+  });
+  </script>
+</head>
+
+<body>
+
+	<div class="header">
+	<div class="logo">
+		</div>
+		<div class="bike">
+		<div class="biker">
+		</div>
+		</div>
+		<div id="hamburgeois">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+      <div class="close"></div>
+		</div>
+	</div>
+
+	<div id="menu900">
+		<ul>
+			<li><a href = "./index.html" > Notre Région </a></li>
+			<li><a href = "./map.html" >Les Parcours</a></li>
+				<li><a href = # >Les Séjours</a></li>
+				<li><a href = # >Les Locations</a></li>
+				<li><a href = # >Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="spinner">
+
+		<ul class="center">
+			<li><a href = "./index.html" > Notre Région </a></li>
+			<li><a href = "./map.html" >Les Parcours</a></li>
+			<li><a href = # >Les Séjours</a></li>
+			<li><a href = # >Les Locations</a></li>
+			<li><a href = # >Contact</a></li>
+		</ul>
+
+	</div>
+  <div id="map">
+					<script>
+						  function initMap() {
+							var center= {lat: 47.2172500, lng: -1.5733600};
+							var uluru = {lat: 47.1952500, lng: -1.5733600};
+							var uluru2= {lat: 47.2002500, lng: -1.7533600};
+							var uluru3= {lat: 47.1852500, lng: -1.6433600};
+					<!--		var uluru4= {lat: 47.2500500, lng: -1.8533600};
+							var uluru5= {lat: 47.2110500, lng: -1.5053600};
+							var uluru6= {lat: 47.2300500, lng: -1.4333600};
+							var uluru7= {lat: 47.2700500, lng: -1.3833600};
+							var map = new google.maps.Map(document.getElementById('map'), {
+							  zoom: 11,
+							  center: center
+							});
+							var marker = new google.maps.Marker({
+							  position: uluru,
+							  map: map
+							});
+							var marker2 = new google.maps.Marker({
+							  position: uluru2,
+							  map: map
+							});
+							var marker3 = new google.maps.Marker({
+							  position: uluru3,
+							  map: map
+							});
+					<!--		var marker4 = new google.maps.Marker({
+					<!--          position: uluru4,
+					<!--          map: map
+					<!--        });
+							var marker5 = new google.maps.Marker({
+							  position: uluru5,
+							  map: map
+							});
+							var marker6 = new google.maps.Marker({
+							  position: uluru6,
+							  map: map
+							});
+							var marker7 = new google.maps.Marker({
+							  position: uluru7,
+							  map: map
+							});
+
+
+						  var flightPlanCoordinates = [
+							new google.maps.LatLng(47.2700500, -1.3833600),
+							new google.maps.LatLng(47.2300500, -1.4333600),
+							new google.maps.LatLng(47.2110500, -1.5053600),
+							new google.maps.LatLng(47.1952500, -1.5733600),
+							new google.maps.LatLng(47.1852500, -1.6433600),
+							new google.maps.LatLng(47.2002500, -1.7533600),
+					<!--		new google.maps.LatLng(47.2500500, -1.8533600),
+
+
+						];
+							  var flightPath = new google.maps.Polyline({
+								path: flightPlanCoordinates,
+								geodesic: true,
+								strokeColor: '#FF0000',
+								strokeOpacity: 1.0,
+								strokeWeight: 2
+							  });
+
+							  flightPath.setMap(map);
+
+						  }
+				</script>
+				<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnl2iv29d1m6YFMFHwBQsowqa6GeMN0PQ&callback=initMap">
+				</script>
+				</div>
+	<div id="footer">
+	<div id="container" class="contient">
+		<div id="boite1" class="boite">
+			<h1>Itinéraire vélo</h1>
+			<div id="sous1" class="sous">
+				<p><a href="#">Tout l'itinéraire</a></p>
+				<p><a href="#">En famille</a></p>
+				<p><a href="#">En couple</a></p>
+			</div>
+		</div>
+		<div id="boite2" class="boite">
+			<h1>Organisez votre séjour vélo</h1>
+			<div id="sous2" class="sous">
+				<p><a href="#">Brochures Loire à Vélo</a></p>
+				<p><a href="#">Topo guide</a></p>
+				<p><a href="#">Où dormir ?</a></p>
+			</div>
+		</div>
+		<div id="boite4" class="boite">
+			<h1>Communauté Vélo</h1>
+			<div id="reseau" class="sous">
+				<div id="facebook" class="lien">
+				<a href="#"><div class="block"></div></a>
+				</div>
+				<div id="twitter" class="lien">
+				<a href="#"><div class="block"></div></a>
+				</div>
+				<div id="instagram" class="lien">
+				<a href="#"><div class="block"></div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
