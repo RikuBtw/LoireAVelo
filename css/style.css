@@ -78,16 +78,10 @@
 		background-image:url("../img/bike.svg");
 		background-repeat:no-repeat;
 		background-position : 95% 50%;
-		transition: all 1s ease;
 	    height: 100%;
 		width: 65px;
 		float:right;
 		margin-right:10px;
-	}
-
-
-	.biker:hover{
-		transform: rotateZ(360deg);
 	}
 
 
